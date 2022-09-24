@@ -5,7 +5,7 @@ const { type } = require('os')
 // create web server event handler
 
 const server = http.createServer((req, res) => {
-    res.Writehead(200, {'Content-type' : 'text/plain'});
+    res.writeHead(200, {'Content-type' : 'text/plain'});
     res.end ('Hello world');
 });
 
